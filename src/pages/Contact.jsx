@@ -16,16 +16,16 @@ export default function Contact() {
 
   return (
     <>
-      <SEO 
-        title="Contact Us - Let's Talk" 
+      <SEO
+        title="Contact Us - Let's Talk"
         description="Get in touch with us to start your next web development project."
         path="/contact"
       />
-      
+
       <section className="bg-white pt-40 pb-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
-            <motion.h1 
+            <motion.h1
               initial={{ opacity: 0, y: -20 }}
               animate={{ opacity: 1, y: 0 }}
               className="text-4xl md:text-5xl font-extrabold text-secondary-900 mb-4"
@@ -39,7 +39,7 @@ export default function Contact() {
 
           <div className="flex flex-col lg:flex-row gap-16">
             {/* Contact Info & Map */}
-            <motion.div 
+            <motion.div
               initial={{ opacity: 0, x: -30 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ delay: 0.2 }}
@@ -52,21 +52,21 @@ export default function Contact() {
                     <MapPin className="text-primary-500 shrink-0 w-6 h-6" />
                     <div>
                       <p className="font-semibold text-lg">Our Office</p>
-                      <p className="text-gray-400 mt-1">123 Innovation Drive,<br/>Tech City, TC 10010, USA</p>
+                      <p className="text-gray-400 mt-1">#582/C, 6th cross, 7th Main <br />Vinayaka Layout 2nd stage <br />Nagarbhavi Bangalore - 560072</p>
                     </div>
                   </li>
                   <li className="flex items-center gap-4">
                     <Phone className="text-primary-500 shrink-0 w-6 h-6" />
                     <div>
                       <p className="font-semibold text-lg">Phone</p>
-                      <p className="text-gray-400 mt-1">+1 (555) 123-4567</p>
+                      <p className="text-gray-400 mt-1">+91 98803 62838</p>
                     </div>
                   </li>
                   <li className="flex items-center gap-4">
                     <Mail className="text-primary-500 shrink-0 w-6 h-6" />
                     <div>
                       <p className="font-semibold text-lg">Email</p>
-                      <p className="text-gray-400 mt-1">hello@webdevco.com</p>
+                      <p className="text-gray-400 mt-1">caspirants@gmail.com</p>
                     </div>
                   </li>
                 </ul>
@@ -85,7 +85,7 @@ export default function Contact() {
             </motion.div>
 
             {/* Contact Form */}
-            <motion.div 
+            <motion.div
               initial={{ opacity: 0, x: 30 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ delay: 0.3 }}
@@ -93,7 +93,7 @@ export default function Contact() {
             >
               <div className="bg-white rounded-3xl p-8 lg:p-12 border border-gray-100 shadow-xl">
                 <h2 className="text-3xl font-bold text-secondary-900 mb-8">Send us a message</h2>
-                
+
                 {status && (
                   <div className="mb-6 p-4 bg-green-50 text-green-700 rounded-xl border border-green-200 flex items-center gap-2">
                     <div className="w-2 h-2 rounded-full bg-green-500"></div>
@@ -109,7 +109,7 @@ export default function Contact() {
                       id="name"
                       required
                       value={formData.name}
-                      onChange={(e) => setFormData({...formData, name: e.target.value})}
+                      onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                       className="w-full px-4 py-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-primary-500 focus:border-primary-500 outline-none transition-all"
                       placeholder="John Doe"
                     />
@@ -121,7 +121,7 @@ export default function Contact() {
                       id="email"
                       required
                       value={formData.email}
-                      onChange={(e) => setFormData({...formData, email: e.target.value})}
+                      onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                       className="w-full px-4 py-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-primary-500 focus:border-primary-500 outline-none transition-all"
                       placeholder="john@example.com"
                     />
@@ -133,7 +133,7 @@ export default function Contact() {
                       required
                       rows={6}
                       value={formData.message}
-                      onChange={(e) => setFormData({...formData, message: e.target.value})}
+                      onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                       className="w-full px-4 py-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-primary-500 focus:border-primary-500 outline-none transition-all resize-none"
                       placeholder="Tell us about your project..."
                     ></textarea>
